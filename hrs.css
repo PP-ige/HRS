@@ -1,0 +1,122 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  html{
+    scroll-behavior: smooth;
+}
+
+.container{
+  padding: 10px 0%;
+}
+  
+nav{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-left: 650px;
+  position: fixed;
+  top: 0;
+  font-family: sans-serif;
+}
+
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 20px 20px;
+}
+
+nav ul li a{
+  color: #04AA6D;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+
+nav ul li a::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #000;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+  width: 100%;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.header-text{
+  font-family: sans-serif;
+  font-size:15px;
+  width: 100%;
+  text-align: center;
+  padding: 25px 0;
+  margin-top: 20px;
+}
+
+.header-text h1{
+  font-size: 40px;
+  width: 100%;
+  text-align: center;
+  padding: 25px 0;
+  margin-top: 25px;
+  font-weight: 500;
+}
+
+.header-text p span{
+  color: #000;
+  font-family: sans-serif;
+  font-size: 25px;
+}
+
+/* About Us page */
+#about{
+  width: 100%;
+  height: 100vh;
+  font-family: sans-serif;
+}
+
+.about-text{
+  width: 100%;
+  text-align: center;
+  padding: 25px 0;
+  font-weight: 300;
+  margin-top: 20px;
+  font-size: 30px;
+}
