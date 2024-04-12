@@ -32,13 +32,26 @@
       <p><span>Confirms customers order. Prompts customers for information (Name, address, etc.). Customer info is updated in database.</span></p>
   </div>
       
-<P>
-<a  href ="payment.html">
- <button class="dropbtn">Product Seletion</button>
-</a>
-<br>
-This button moves on the the payment method page
-</P>
 
+  <a href="payment.html" target="_blank" class="btn">Payment Info</a>
+</a>
+<div class="container">
+  <form action="action_page.php">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="address">Address (State, City, Zip)</label>
+    <input type="text" id="address" name="address" placeholder="Your address..">
+
+    <label for="number">Phone Number</label>
+    <input type="text" id="number" name="number" placeholder="Your Phone Number..">
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
 </body>
 </html>
