@@ -7,51 +7,39 @@
     <link rel="stylesheet" href=hrs.css>
 </head>
 <body>
-  <div id="header">
-    <div class="container">
-        <nav>
-         <ul id="navigation">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="employee.html">Employee Login</a></li>
-                <li class="dropdown">
-                  <a href="about.html" class="dropbtn">About Us</a>
-                  <div class="dropdown-content1">
-                      <a href="hrsHistory.html">HRS History</a>
-                      <a href="employeeContacts.html">Employee Contacts</a>
-                      <a href="manufacturerList.html">Manufacturers</a>
-                      <a href="faq.html">FAQ</a>
-                  </div>
-              </li>
-                <li><a href ="productSelection.html">Product Selection</a></li>
-         </ul>
-        </nav>
+    
+    <a  href ="index.html">
+        <button class="dropbtn">Home</button>
+        </a>
+    
+        <a  href ="employee.html">
+            <button class="dropbtn">Employee Login</button>
+        </a>
+       
+          <div class="dropdown">
+            <button class="dropbtn">About Us</button>
+            <div class="dropdown-content">
+              <a href="hrsHistory.html">HRS History</a>
+              <a href="employeeContacts.html">Employee Contacts</a>
+              <a href="manufacturerList.html">Manufacturers</a>
+              <a href="faq.html">FAQ</a>
+            </div>
+          </div>
+    
+          <a  href ="productSelection.html">
+            
+            <button class="dropbtn">Product Seletion</button>
+        </a>
+    
+<h1> Order Confirmation</h1>
+Confirms customers order. Prompts customers for information (Name, address, etc.). Customer info is updated in database.
+<P>
+<a  href ="payment.html">
+ <button class="dropbtn">Product Seletion</button>
 </a>
-     </div>
-     <div class="header-text">
-      <h1>Order Confirmation</h1>
-      <p><span>Confirms customers order. Prompts customers for information (Name, address, etc.). Customer info is updated in database.</span></p>
-  </div>
-      
+<br>
+This button moves on the the payment method page
+</P>
 
-  <a href="payment.html" target="_blank" class="btn">Payment Info</a>
-</a>
-<div class="container">
-  <form action="action_page.php">
-
-    <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-    <label for="address">Address (State, City, Zip)</label>
-    <input type="text" id="address" name="address" placeholder="Your address..">
-
-    <label for="number">Phone Number</label>
-    <input type="text" id="number" name="number" placeholder="Your Phone Number..">
-    <input type="submit" value="Submit">
-
-  </form>
-</div>
 </body>
 </html>

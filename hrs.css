@@ -61,7 +61,7 @@ nav ul li a:hover::after{
   display: inline-block;
 }
 
-.dropdown-content1 {
+.dropdown-content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
@@ -70,52 +70,15 @@ nav ul li a:hover::after{
   z-index: 1;
 }
 
-.dropdown-content1 a {
+.dropdown-content a {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
 
-.dropdown:hover .dropdown-content1 {
+.dropdown:hover .dropdown-content {
   display: block;
-}
-
-.dropdown-content2 {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content2 a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown:hover .dropdown-content2 {
-  display: block;
-}
-
-.arrow-down {
-  position: absolute;
-  top: 50%;
-  right: 10;
-  transform: translateY(-50%);
-  width: 0;
-  height: 0;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  border-top: 6px solid #04AA6D;
-  transition: transform 0.3s ease;
-}
-
-.dropdown:hover .arrow-down {
-  transform: translateY(-50%) rotate(180deg);
 }
 
 .header-text{
@@ -157,146 +120,3 @@ nav ul li a:hover::after{
   margin-top: 20px;
   font-size: 30px;
 }
-
-/* FAQ page */
-h2 {
-  font-size: 1.5em;
-  margin-bottom: 0.5em;
-}
-
-p {
-  margin-bottom: 1em;
-}
-
-/* Button */
-.btn{
-  font-family: sans-serif;
-  font-weight: 100;
-  display: block;
-  background: #04AA6D;
-  margin: 50px auto;
-  width: fit-content;
-  border: 1px solid #04AA6D;
-  padding: 14px 50px;
-  border-radius: 6px;
-  text-decoration: none;
-  color: #fff;
-  transform: background 0.5s;
-}
-
-.btn:hover{
-  background: #000;
-}
-
-.codebtn{
-display: block;
-background: #000000;
-margin: 50px auto;
-width: fit-content;
-border: 1px solid #04AA6D;
-padding: 14px 50px;
-border-radius: 6px;
-text-decoration: none;
-color: #000;
-transform: background 0.5s;
-}
-
-.codebtn:hover{
-  background:#000;
-}
-
-/* Text area */
-input[type=text], select, textarea {
-  width: 100%; 
-  padding: 12px; 
-  border: 1px solid #ccc; 
-  border-radius: 4px; 
-  box-sizing: border-box; 
-  margin-top: 6px; 
-  margin-bottom: 16px; 
-  resize: vertical
-}
-input[type=submit]{
-  background-color: #04AA6D;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color: #04AA6D;
-}
-
-.container {
-  border-radius: 5px;
-  padding: 20px;
-}
-
-/* Products */
-.product-boxes {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-  justify-content: center;
-}
-
-.product-box {
-  border: 1px solid #000;
-  padding: 20px;
-  text-align: center;
-}
-
-button.add-to-cart {
-  padding: 10px 20px;
-  background-color: #04AA6D;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-button.add-to-cart:hover {
-  background-color: #000;
-}
-
-.cart {
-  margin-top: 20px;
-  text-align: center;
-}
-
-#cart-btn {
-  padding: 10px 20px;
-  background-color: #04AA6D;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-#cart-btn:hover {
-  background-color: #000;
-}
-
-
-.hidden {
-  display: none;
-}
-
-#cart-items {
-  border: 1px solid #ccc;
-  padding: 20px;
-}
-
-#cart-list {
-  list-style: none;
-  padding: 0;
-}
-
-#cart-list li {
-  margin-bottom: 10px;
-}
-

@@ -24,3 +24,4 @@ connection.query('select * from testtable', function (error, results, fields){
         console.log(result)
     });
 });
+    
