@@ -22,7 +22,7 @@ nav{
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding-left: 650px;
+  padding-left: 625px;
   position: fixed;
   top: 0;
   font-family: sans-serif;
@@ -31,7 +31,7 @@ nav{
 nav ul li{
   display: inline-block;
   list-style: none;
-  margin: 20px 20px;
+  margin: 20px 35px;
 }
 
 nav ul li a{
@@ -188,22 +188,7 @@ p {
   background: #000;
 }
 
-.codebtn{
-display: block;
-background: #000000;
-margin: 50px auto;
-width: fit-content;
-border: 1px solid #04AA6D;
-padding: 14px 50px;
-border-radius: 6px;
-text-decoration: none;
-color: #000;
-transform: background 0.5s;
-}
 
-.codebtn:hover{
-  background:#000;
-}
 
 /* Text area */
 input[type=text], select, textarea {
@@ -287,7 +272,7 @@ button.add-to-cart:hover {
 }
 
 #cart-items {
-  border: 1px solid #ccc;
+  border: 1px solid #fff;
   padding: 20px;
 }
 
@@ -300,3 +285,44 @@ button.add-to-cart:hover {
   margin-bottom: 10px;
 }
 
+
+a {
+  color: #04AA6D; 
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+
+li {
+  margin-bottom: 10px;
+}
+
+
+ul:not(:first-of-type) {
+  margin-top: 20px;
+}
+
+.button-container {
+  display: inline;
+  justify-content: space-around; 
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #04AA6D;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none; 
+  margin-top: 100px;
+  margin-left: 225px;
+}
+
+.button:hover {
+  background-color: #000;
+}
