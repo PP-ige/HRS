@@ -1,12 +1,52 @@
+.bg-img {
+  /* The image used */
+  background-image: url("MO.jpg");
+
+  min-height: 380px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Position the navbar container inside the image */
+.container {
+  position: absolute;
+  margin: 20px;
+  width: auto;
+}
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+p{
+  align-items: left;
+  margin-left: 150px;
+  margin-right: 150px;
+  font-size: 18px;
+  text-align: left;
+  padding-top: 20px;
+}
+
+svg {
+  width: auto;
+  height: auto;
+  fill: black;
+  stroke: black;
+} 
+
 body {
     font-family: Arial, Helvetica, sans-serif;
   }
+
+.bgcontainer{
+  height: 70px; /* Set the height of your container */
+  background-color: #f2f2f2; /* Set the background color */
+  background-position: center;
+}
 
   html{
     scroll-behavior: smooth;
@@ -19,10 +59,9 @@ body {
 nav{
   display: flex;
   width: 100%;
-  align-items: center;
+  align-items: left;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding-left: 650px;
   position: fixed;
   top: 0;
   font-family: sans-serif;
@@ -35,7 +74,7 @@ nav ul li{
 }
 
 nav ul li a{
-  color: #04AA6D;
+  color: #000;
   text-decoration: none;
   font-size: 18px;
   position: relative;
@@ -110,7 +149,7 @@ nav ul li a:hover::after{
   height: 0;
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
-  border-top: 6px solid #04AA6D;
+  border-top: 6px solid black;
   transition: transform 0.3s ease;
 }
 
@@ -124,7 +163,7 @@ nav ul li a:hover::after{
   width: 100%;
   text-align: center;
   padding: 25px 0;
-  margin-top: 20px;
+  margin-top: 12px;
 }
 
 .header-text h1{
