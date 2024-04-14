@@ -1,12 +1,53 @@
+.bg-img {
+  background-image: url("MO.jpg");
+
+  min-height: 380px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Position the navbar container inside the image */
+.container {
+  position: absolute;
+  margin: 20px;
+  width: auto;
+}
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+p{
+  align-items: left;
+  margin-left: 200px;
+  margin-right: 200px;
+  font-size: 18px;
+  text-align: left;
+  padding-top: 20px;
+}
+
+svg {
+  width: auto;
+  height: auto;
+  fill: black;
+  stroke: black;
+} 
+
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background-size: cover;
+    background-color: white;
   }
+
+.bgcontainer{
+  height: 70px; /* Set the height of your container */
+  background-color: #bea493; /* Set the background color */
+  background-position: center;
+}
 
   html{
     scroll-behavior: smooth;
@@ -19,11 +60,10 @@ body {
 nav{
   display: flex;
   width: 100%;
-  align-items: center;
+  align-items: left;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding-left: 625px;
-  position: relative;
+  position: fixed;
   top: 0;
   font-family: sans-serif;
 }
@@ -35,7 +75,7 @@ nav ul li{
 }
 
 nav ul li a{
-  color: #04AA6D;
+  color: #000;
   text-decoration: none;
   font-size: 18px;
   position: relative;
@@ -110,7 +150,7 @@ nav ul li a:hover::after{
   height: 0;
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
-  border-top: 6px solid #04AA6D;
+  border-top: 6px solid black;
   transition: transform 0.3s ease;
 }
 
@@ -118,13 +158,17 @@ nav ul li a:hover::after{
   transform: translateY(-50%) rotate(180deg);
 }
 
+.color-container{
+  background-color: #dcae96;
+  display: inline;
+}
+
 .header-text{
   font-family: sans-serif;
   font-size:15px;
-  width: 100%;
   text-align: center;
   padding: 25px 0;
-  margin-top: 20px;
+  margin-top: 12px;
 }
 
 .header-text h1{
@@ -418,10 +462,12 @@ ul:not(:first-of-type) {
 }
 
 div.scroll-container {
-  background-color: #333;
+  background-color: #f2f2f2;
   overflow: auto;
-  white-space: nowrap;
+  white-space: wrap;
   padding: 10px;
+  margin-left: 150px;
+  margin-right: 150px;
 }
 
 div.scroll-container img {
