@@ -73,13 +73,14 @@ body {
   
 nav{
   display: flex;
-  width: 100%;
+  width: 120%;
   align-items: left;
   justify-content: space-between;
   flex-wrap: wrap;
   position: fixed;
   background-color: #bea493;
   top: 0;
+  left: 0;
   font-family: sans-serif;
 }
 
