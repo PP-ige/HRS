@@ -489,3 +489,27 @@ div.scroll-container {
 div.scroll-container img {
   padding: 10px;
 }
+
+
+.contacts-table h2{
+  margin-left: 550px;
+
+  margin-top:  50px;
+  margin-bottom: 50px;
+}
+.contacts-table table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+  
