@@ -5,10 +5,22 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
+  /* position: relative; */
 }
 
-/* Position the navbar container inside the image */
+.bg-transbox {
+
+
+  background-color: #c0B79e;
+  background: rgba(192, 183, 158, .75)
+}
+
+.bg-transbox h1{
+  color: white;
+  font-weight: bold;
+}
+
+/* Position the navba r container inside the image */
 .container {
   position: absolute;
   margin: 20px;
@@ -44,9 +56,10 @@ body {
   }
 
 .bgcontainer{
-  height: 70px; /* Set the height of your container */
-  background-color: #bea493; /* Set the background color */
-  background-position: center;
+   height: 70px; /* Set the height of your container */
+   background-color: #bea493; /*Set the background color */
+  position: sticky;
+  /* overflow: hidden; */
 }
 
   html{
@@ -54,16 +67,18 @@ body {
 }
 
 .container{
+  
   padding: 10px 0%;
 }
   
 nav{
   display: flex;
   width: 100%;
-  align-items: left;
+  align-items: right;
   justify-content: space-between;
   flex-wrap: wrap;
   position: fixed;
+  background-color: #bea493;
   top: 0;
   font-family: sans-serif;
 }
@@ -75,7 +90,7 @@ nav ul li{
 }
 
 nav ul li a{
-  color: #000;
+  color: white;
   text-decoration: none;
   font-size: 18px;
   position: relative;
