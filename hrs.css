@@ -1,15 +1,21 @@
 .bg-img {
-  /* The image used */
-  background-image: url("MO.jpg");
+  background-image: url("Images/MO.jpg");
 
   min-height: 380px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
+  /* position: relative; */
 }
 
-/* Position the navbar container inside the image */
+
+
+.bg-transbox h1{
+  color: black;
+  text-align: right;
+}
+
+/* Position the navba r container inside the image */
 .container {
   position: absolute;
   margin: 20px;
@@ -24,8 +30,8 @@
 
 p{
   align-items: left;
-  margin-left: 150px;
-  margin-right: 150px;
+  margin-left: 200px;
+  margin-right: 200px;
   font-size: 18px;
   text-align: left;
   padding-top: 20px;
@@ -40,12 +46,13 @@ svg {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background-size: cover;
+    background-color: white;
   }
 
 .bgcontainer{
   height: 70px; /* Set the height of your container */
-  background-color: #f2f2f2; /* Set the background color */
-  background-position: center;
+  position: sticky;
 }
 
   html{
@@ -62,12 +69,14 @@ body {
   
 nav{
   display: flex;
-  width: 100%;
+  width: 120%;
   align-items: left;
   justify-content: space-between;
   flex-wrap: wrap;
   position: fixed;
+  background-color: #bea493;
   top: 0;
+  left: 0;
   font-family: sans-serif;
 }
 
@@ -75,10 +84,11 @@ nav ul li{
   display: inline-block;
   list-style: none;
   margin: 20px 35px;
+  color: black;
 }
 
 nav ul li a{
-  color: #000;
+  color: black;
   text-decoration: none;
   font-size: 18px;
   position: relative;
@@ -107,7 +117,7 @@ nav ul li a:hover::after{
 .dropdown-content1 {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: white;
   min-width: 160px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   z-index: 1;
@@ -127,14 +137,14 @@ nav ul li a:hover::after{
 .dropdown-content2 {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: white;
   min-width: 160px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   z-index: 1;
 }
 
 .dropdown-content2 a {
-  color: black;
+  color: white;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -161,8 +171,6 @@ nav ul li a:hover::after{
   transform: translateY(-50%) rotate(180deg);
 }
 
-<<<<<<< Updated upstream
-=======
 .color-container{
   background-color: #4b3832;
   display: inline;
@@ -186,11 +194,9 @@ header .content {
   z-index: 1;
 }
 
->>>>>>> Stashed changes
 .header-text{
   font-family: sans-serif;
   font-size:15px;
-  width: 100%;
   text-align: center;
   padding: 25px 0;
   margin-top: 12px;
@@ -283,6 +289,8 @@ input[type=submit]:hover {
   background-color: #04AA6D;
 }
 
+
+
 .container {
   border-radius: 5px;
   padding: 20px;
@@ -290,6 +298,7 @@ input[type=submit]:hover {
 
 /* Products */
 .product-container {
+  margin-top: 80px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between; 
@@ -310,7 +319,7 @@ input[type=submit]:hover {
 
 button.add-to-cart {
   padding: 10px 20px;
-  background-color: #04AA6D;
+  background-color: grey;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -329,7 +338,7 @@ button.add-to-cart:hover {
 
 #cart-btn {
   padding: 10px 20px;
-  background-color: #04AA6D;
+  background-color: grey;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -362,7 +371,7 @@ button.add-to-cart:hover {
 
 
 a {
-  color: #04AA6D; 
+  color: grey; 
   text-decoration: none;
 }
 
@@ -388,7 +397,7 @@ ul:not(:first-of-type) {
 .button {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #04AA6D;
+  background-color: grey;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -402,23 +411,11 @@ ul:not(:first-of-type) {
   background-color: #000;
 }
 
-#checkout-btn {
-  padding: 10px 20px;
-  background-color: #04AA6D;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
 
-#checkout-btn:hover {
-  background-color: #000;
-}
 
 #view-more-btn{
   padding: 10px 20px;
-  background-color: #04AA6D;
+  background-color: grey;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -487,12 +484,42 @@ ul:not(:first-of-type) {
 }
 
 div.scroll-container {
-  background-color: #333;
+  background-color: #cab9a7;
   overflow: auto;
-  white-space: nowrap;
+  white-space: wrap;
   padding: 10px;
+  margin-left: 150px;
+  margin-right: 150px;
 }
 
 div.scroll-container img {
   padding: 10px;
+}
+
+
+.contacts-table h2{
+  margin-left: 550px;
+
+  margin-top:  50px;
+  margin-bottom: 50px;
+}
+.contacts-table table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+  
+.botcontainer{
+  margin-left: 250px;
+  margin-right: 250px;
 }
